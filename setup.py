@@ -39,7 +39,7 @@ def _load_meta(path):
             readme_path = str(meta['long_description'])[7:]
             readme_path = join(src_dir, readme_path)
             if exists(readme_path):
-                readme = open(readme_path, 'r').read().strip()
+                readme = open(readme_path,'r').read().strip()
                 meta['long_description'] = readme
             else:
                 meta['long_description'] = ''
